@@ -1,0 +1,13 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+int main()
+
+{
+    int x;
+    double y;
+    printf("请输入你的身高："); scanf("%d", &x);
+    y = (x - 100) * 0.9;
+    printf("您的标准体重是%5.1f公斤。\n", y);
+    return 0;
+}

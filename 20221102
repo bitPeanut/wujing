@@ -1,0 +1,32 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+int main()
+{
+	//真代表  非0
+	//假代表    0
+	int a = 0;
+	int b = 5;
+	int c = a && b;//逻辑与
+	int d = a || b;//逻辑或
+	printf("c = %d d = %d", c, d);
+	return 0;
+}
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	int max = 0;
+	max = (a > b ? a : b);//exp1?exp2:exp3，exp表示表达式，如果exp1成立则执行exp2，如果exp1不成立则执行exp3（条件操作符）
+	printf("%d\n", max);
+	return 0;
+}
+
+int main()
+{
+	//原码、反码、补码，原码取反得到反码，反码+1得到补码，~是是取反码符号，负数的二进制代表符号数的补码
+	int a = 0;//二进制00000000000000000000000000000000
+	int b = ~a;//二进制11111111111111111111111111111111
+	printf("%d\n", b);//这里打印的是这个数的原码
+}
